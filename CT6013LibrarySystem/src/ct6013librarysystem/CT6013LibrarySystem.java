@@ -53,8 +53,9 @@ public class CT6013LibrarySystem {
         // DriverManager is using the namespace and password to connect to the database
         try {
             connection = DriverManager.getConnection(
-                    "jdbc:oracle:thin:@apollo01.glos.ac.uk:1521:orcl", "S1401304",
-                    "S1401304"); //Namespace currently does not exist
+                    "jdbc:oracle:thin:@apollo01.glos.ac.uk:1521:orcl", "nameSpace",
+                    "nameSpace"); //Namespace currently does not exist
+                  
                     
             if (connection != null) {
                 System.out.println("Database connection successful!");
